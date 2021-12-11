@@ -1,0 +1,68 @@
+
+<!-- Modal -->
+<style>
+  .modal-content {
+    background-color: #12562c
+  }
+</style>
+<div class="modal fade" id="exampleModal-{{ t.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          <b>
+            <center>
+              Informatii produs
+            </center> 
+          </b> 
+          <p>
+            <b> Nume produs : </b> {{ t.nume }} 
+          </p>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <b> Cod de bara : </b>{{ t.cod_bara }}<br>
+          <b> Pret : </b> {{ t.pret }} RON <br>
+          <center>
+            <img src={{ t.poza }} width="400" height="300">
+          </center>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalCumparare-{{ t.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          <b>
+            <center>
+              Informatii produs
+            </center> 
+          </b> 
+          <p>
+            <b> Nume produs : </b> {{ t.nume }} 
+          </p>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Esti sigur ca vrei sa cumperi {{ t.nume }} pentru {{ t.pret }} ?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
